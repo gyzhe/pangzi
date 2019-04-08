@@ -141,6 +141,10 @@
         zIndex++;
         this.style.zIndex=zIndex;
      }
+     var header=cloneTip.firstElementChild;
+     header.ondblclick=function(){
+        this.parentNode.style.display="none";
+     }
    }
 </script>
 </html>
