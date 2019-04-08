@@ -126,12 +126,16 @@
 </div>
 </body>
 <script>
-    var  content=document.getElementById("content");
+     var  content=document.getElementById("content");
     var cc=document.getElementById("cc");
    for(var i=0;i<10;i++){
      var cloneTip=cc.cloneNode(true);
      cloneTip.id="cc"+i;
-     content.appendChild(cloneTip)
+     content.appendChild(cloneTip);
+     var x=parseInt(Math.random()*400+400);
+     var y=parseInt(Math.random()*400);
+     cloneTip.style.left=x+"px";
+     cloneTip.style.top=y+"px";
    }
 </script>
 </html>
