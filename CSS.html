@@ -126,6 +126,7 @@
 </div>
 </body>
 <script>
+    var zIndex=100;
      var  content=document.getElementById("content");
     var cc=document.getElementById("cc");
    for(var i=0;i<10;i++){
@@ -136,6 +137,10 @@
      var y=parseInt(Math.random()*400);
      cloneTip.style.left=x+"px";
      cloneTip.style.top=y+"px";
+     cloneTip.onclick=function(){
+        zIndex++;
+        this.style.zIndex=zIndex;
+     }
    }
 </script>
 </html>
